@@ -1,0 +1,7 @@
+Berikut terdapat tiga test yang saya jalankan yaitu:
+
+- ClickButtonTest.java --> test dalam mengubah button menjadi purple 
+
+- InputTextAreaTest.java --> test dalam menginput text area dengan value "Hello its me mario"
+
+- SliderControlTest.java --> test dalam mengubah slider dari 50% menjadi 100%
