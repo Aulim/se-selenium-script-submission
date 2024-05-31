@@ -1,0 +1,136 @@
+{
+  "id": "5ccd28a8-5df7-4dd6-9df7-2ae6357099fa",
+  "version": "2.0",
+  "name": "Test_Script",
+  "url": "https://seleniumbase.io",
+  "tests": [{
+    "id": "0022a907-6e8d-41be-860a-3093e9efd57e",
+    "name": "Test",
+    "commands": [{
+      "id": "4378eed3-d0d4-47cb-bd05-f1f56da4f2b7",
+      "comment": "",
+      "command": "open",
+      "target": "/demo_page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24fd92b3-00b8-4c47-a698-afc385f44e3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "822x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8186756-c12d-4553-b990-6011a1a6a6a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=svgRect",
+      "targets": [
+        ["id=svgRect", "id"],
+        ["css=#svgRect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "85a06c5e-e00c-4953-bcca-2ffc86f13bcc",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=mySlider",
+      "targets": [
+        ["id=mySlider", "id"],
+        ["name=sliderName", "name"],
+        ["css=#mySlider", "css:finder"],
+        ["xpath=//input[@id='mySlider']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "200.1999969482422,23.79998779296875"
+    }, {
+      "id": "cc191192-f5d9-4bb6-ba67-9dbae554174f",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=mySlider",
+      "targets": [
+        ["id=mySlider", "id"],
+        ["name=sliderName", "name"],
+        ["css=#mySlider", "css:finder"],
+        ["xpath=//input[@id='mySlider']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "200.1999969482422,23.79998779296875"
+    }, {
+      "id": "87d779cf-34dc-4ed5-9cfb-45bd954614bd",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=mySlider",
+      "targets": [
+        ["id=mySlider", "id"],
+        ["name=sliderName", "name"],
+        ["css=#mySlider", "css:finder"],
+        ["xpath=//input[@id='mySlider']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "200.1999969482422,23.79998779296875"
+    }, {
+      "id": "47fc3b6d-91ca-4685-8ec2-79f00fdf98ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=mySlider",
+      "targets": [
+        ["id=mySlider", "id"],
+        ["name=sliderName", "name"],
+        ["css=#mySlider", "css:finder"],
+        ["xpath=//input[@id='mySlider']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "9ed0ed43-f9b7-42a6-9dc2-d4e07d3e7487",
+      "comment": "",
+      "command": "click",
+      "target": "id=mySlider",
+      "targets": [
+        ["id=mySlider", "id"],
+        ["name=sliderName", "name"],
+        ["css=#mySlider", "css:finder"],
+        ["xpath=//input[@id='mySlider']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f409d234-8581-4b5d-b290-5f883e8a9fc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=mySelect",
+      "targets": [
+        ["id=mySelect", "id"],
+        ["name=selectName", "name"],
+        ["css=#mySelect", "css:finder"],
+        ["xpath=//select[@id='mySelect']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyId']/tr[7]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8957be8e-f93a-47fc-8305-7ce117db0d23",
+      "comment": "",
+      "command": "select",
+      "target": "id=mySelect",
+      "targets": [],
+      "value": "label=Set to 100%"
+    }]
+  }],
+  "suites": [{
+    "id": "38be29e0-fae8-4ef8-9c37-1db904bdb34e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0022a907-6e8d-41be-860a-3093e9efd57e"]
+  }],
+  "urls": ["https://seleniumbase.io/"],
+  "plugins": []
+}
