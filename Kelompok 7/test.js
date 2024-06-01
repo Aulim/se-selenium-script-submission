@@ -4,7 +4,7 @@ const assert = require('assert');
 (async function example() {
   let driver = await new Builder().forBrowser('chrome').build();
   try {
-    await driver.get('https://your-website-testing-page.com');
+    await driver.get('https://seleniumbase.io/demo_page');
 
     const pageTitle = await driver.getTitle();
     assert.strictEqual(pageTitle, 'Website Testing Page');
