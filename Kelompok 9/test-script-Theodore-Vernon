@@ -1,0 +1,105 @@
+<tr>
+    <td>Select Dropdown:</td>
+    <td>
+        <select id="mySelect" name="selectName" class="selectClass" onchange="selectFunction1()" style="width: 95%; font-size: 14px;">
+            <option value="0%">Set to 0%</option>
+            <option value="50%">Set to 50%</option>
+            <option value="100%">Set to 100%</option>
+         </select>
+    </td>
+     <td><label id="meterLabel" for="meterBar">HTML Meter: (100%)</label></td>
+     <td><meter id="meterBar" value="0" style="width: 94%;"></meter></td>
+</tr>
+
+
+<script wfd-invisible="true">
+            function selectFunction1() {
+                var d = document.getElementById("mySelect").value;
+                var m = document.getElementById("meterBar");
+                var ml = document.getElementById("meterLabel");
+                if (d == "0%") {
+                    m.value = "0";
+                    ml.textContent = "HTML Meter: (0%)";
+                }
+                if (d == "50%") {
+                    m.value = "0.5";
+                    ml.textContent = "HTML Meter: (50%)";
+                }
+                if (d == "100%") {
+                    m.value = "1.0";
+                    ml.textContent = "HTML Meter: (100%)";
+                }
+            }
+</script>
+
+<!--
+  Saya melakukan modifikasi pada html diatas dimana option dari drop down yang awalnya memiliki 4 pilihan (25-50-75-100) sekarang hanya menjadi 3 (0-50-100).
+  hal ini dilakukan untuk menyesuaikan dengan perubahan yang saya lakukan pada testscriptnya sendiri.
+  Pada testscript diatas, kita memanipulasi/mengautomasi baris "Select Dropdown", dimana bila kita melakukan pemilihan dari isi dropdown (mySelect) yg pada 
+  testscript ini ditampung oleh var d valuenya. Maka, HTML Meter (meterLabel ditampung oleh var ml) dan bar hijau disampingnya (meterBar yang ditampung oleh var m)
+  akan ikut sesuai dengan perubahan dari isi drop down.
+  contohnya, bila kita memilih dropdown "Set to 0%" maka HTML Meter akan secara otomatis merubah textnya menjadi 0% dan bar hijau disampingnya akan tidak
+  terisi.
+-->
+
+
+
+
+
+
+<script wfd-invisible="true">
+            function buttonFunction1() {
+              var x = document.getElementById("myButton");
+              var y = document.getElementById("pText");
+              var z = document.getElementById("readOnlyText");
+              if (x.style.color != "red") {
+                x.style.color = "red";
+                x.textContent = "Click Me (Red)";
+                y.textContent = "This Text is Red";
+                y.style.color = "red";
+                z.value = "The Color is Red";
+                z.style.color = "red";
+              }
+              else {
+                x.style.color = "black";
+                x.textContent = "Click Me (Black)";
+                y.textContent = "This Text is Black";
+                y.style.color = "black";
+                z.value = "The Color is Black";
+                z.style.color = "black";
+              }
+            }
+</script>
+
+<!--
+  Pada testscript diatas, saya melakukan perubahan dimana warna yang awalnya hijau dan ungu (green & purple) menjadi merah dan hitam (red & black). Dalam
+  testscript ini sendiri, button awalnya akan memuat text "Click Me (Red)", Read-Only Text Field akan memuat text "The color is Red", dan Paragraph
+  with text akan memuat text "This Text is Red". bila button kemudian di klik, maka ketiga elemen tersebut akan berubah menjadi warna hitam (textnya) dan
+  seluruh text "Red" akan berubah menjadi "Black"
+-->
+
+
+
+
+
+
+
+
+
+
+<script wfd-invisible="true">
+            function sliderFunction1() {
+              var s = document.getElementById("mySlider");
+              var p = document.getElementById("progressBar");
+              var pl = document.getElementById("progressLabel");
+              p.value = 100 - s.value;
+              pl.textContent = "Progress Bar: (" + p.value + "%)";
+            }
+</script>
+
+<!--
+  Pada testscript diatas, saya mengubah p.value = s.value menjadi p.value = 100 - s.value yang kemudian akan merubah logika dari elemen slidernya. Didalam
+  testscript tersebut bila Input Slider Control (mySlider) kita geser ke kanan maka valuenya dari var s pun akan membesar dan vice versa. Ini akan memengaruhi
+  value dari var p (progressBar) dan var pl (progressLabel) dimana bila var s semakin besar maka value var p dan var pl akan mengecil dan vice versa.
+  Contohnya, bila slider kita geserkan ke ujung kanan maka Progress Bar akan menjadi 0% dan bar disampingnya pun akan tidak terisi. 
+-->
