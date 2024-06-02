@@ -1,0 +1,63 @@
+<script>
+    function sliderFunction1() {
+      var s = document.getElementById("mySlider");
+      var p = document.getElementById("progressBar");
+      var pl = document.getElementById("progressLabel");
+      p.value = s.value;
+      pl.textContent = "Progress Bar: (" + p.value + "%)";
+    }
+</script>
+
+<!-- PENJELASAN -->
+<!-- Skrip ini biasanya digunakan dalam skenario di mana pengguna berinteraksi dengan slider untuk mengontrol atau memantau kemajuan, 
+seperti menyesuaikan volume, mengatur level, atau melacak persentase penyelesaian. Ketika slider digerakkan, 
+fungsi ini dapat dipanggil untuk secara dinamis memperbarui bilah kemajuan dan label yang terkait, memberikan umpan balik visual langsung kepada pengguna. -->
+
+<!-- Manipulation 1: Change Background Color of Progress Bar Based on Value -->
+<script>
+  function sliderFunction1() {
+    var s = document.getElementById("mySlider");
+    var p = document.getElementById("progressBar");
+    var pl = document.getElementById("progressLabel");
+    p.value = s.value;
+    pl.textContent = "Progress Bar: (" + p.value + "%)";
+
+    // Change background color based on value
+    if (p.value < 33) {
+      p.style.backgroundColor = "red";
+    } else if (p.value < 66) {
+      p.style.backgroundColor = "yellow";
+    } else {
+      p.style.backgroundColor = "green";
+    }
+  }
+</script>
+
+<!-- Manipulation 2: Display the Slider Value as a Tooltip -->
+<script>
+  function sliderFunction1() {
+    var s = document.getElementById("mySlider");
+    var p = document.getElementById("progressBar");
+    var pl = document.getElementById("progressLabel");
+    p.value = s.value;
+    pl.textContent = "Progress Bar: (" + p.value + "%)";
+
+    // Display the value as a tooltip
+    s.title = "Current Value: " + s.value + "%";
+  }
+</script>
+
+<!-- Manipulation 3: Update Another Element's Text with Slider Value -->
+<script>
+  function sliderFunction1() {
+    var s = document.getElementById("mySlider");
+    var p = document.getElementById("progressBar");
+    var pl = document.getElementById("progressLabel");
+    var el = document.getElementById("extraLabel");
+    p.value = s.value;
+    pl.textContent = "Progress Bar: (" + p.value + "%)";
+    
+    // Update another element's text content
+    el.textContent = "Slider Value: " + s.value;
+  }
+</script>
