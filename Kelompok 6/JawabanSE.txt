@@ -1,0 +1,6 @@
+Maleo Farrel - 2602076784 Selenium
+
+1. Melakukan perubahan dengan slider dari 50% menjadi 100% dan menjadi 0%, lalu menjadi 50% lagi atau semula.
+2. Melakukan perubahan dengan mengklik button yang berwarna hijau hingga berubah menjadi warna ungu lalu diklik lagi hingga berubah warna seperti semua / hijau.
+3. Melakukan select drop down dari 25% menjadi 50%, 75%, dan 100%, lalu diubah lagi hingga menjadi 25%.
+4. Mengklik radio button 2 lalu radio button 1 dan dilakukan beberapa kali hingga selesai. 
